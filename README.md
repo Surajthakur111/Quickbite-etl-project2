@@ -22,3 +22,6 @@ Output files are written to S3
 
 ## Screenshots
 See `/screenshots/` folder for DAG and job run evidence.
+
+
+During initial runs, the DAG failed due to a missing glue:StartJobRun IAM permission for the MWAA role. After attaching the correct policy, the DAG executed successfully and now runs as expected.
